@@ -1,0 +1,7 @@
+//lfuse:w:0xEF:m -U hfuse:w:0xC9:m
+// makes .fuse section with proper vals
+#include <avr/fuse.h>
+FUSES = {
+.low = FUSE_SUT0,
+.high = FUSE_SPIEN & FUSE_CKOPT & FUSE_EESAVE & FUSE_BOOTSZ1 & FUSE_BOOTSZ0,
+};

@@ -1,0 +1,82 @@
+# EESchema Netlist Version 1.1 created  Wed 19 Jun 2013 01:50:52 PM EEST
+(
+ ( /51C18933 PIN_ARRAY_1 A1 CONN_1
+  ( 1 N-000010 )
+ )
+ ( /51C18938 PIN_ARRAY_1 A2 CONN_1
+  ( 1 N-000012 )
+ )
+ ( /51C18941 PIN_ARRAY_1 A3 CONN_1
+  ( 1 N-000008 )
+ )
+ ( /51C18950 PIN_ARRAY_1 A4 CONN_1
+  ( 1 N-000015 )
+ )
+ ( /51C189AF PIN_ARRAY_1 D1 CONN_1
+  ( 1 N-000017 )
+ )
+ ( /51C189BA PIN_ARRAY_1 D2 CONN_1
+  ( 1 N-000005 )
+ )
+ ( /51C189BC PIN_ARRAY_1 D3 CONN_1
+  ( 1 N-000006 )
+ )
+ ( /51C189BF PIN_ARRAY_1 D4 CONN_1
+  ( 1 N-000007 )
+ )
+ ( /51C189C6 PIN_ARRAY_1 J1 CONN_1
+  ( 1 N-000018 )
+ )
+ ( /51C189CC PIN_ARRAY_1 J2 CONN_1
+  ( 1 N-000002 )
+ )
+ ( /51C188E3 PIN_ARRAY_4x1 P1 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000010 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C188E9 PIN_ARRAY_4x1 P2 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000012 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C188ED PIN_ARRAY_4x1 P3 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000008 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C188F7 PIN_ARRAY_4x1 P4 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000015 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C188FD PIN_ARRAY_4x1 P5 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000017 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C18905 PIN_ARRAY_4x1 P6 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000005 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C18908 PIN_ARRAY_4x1 P7 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000006 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+ ( /51C1890B PIN_ARRAY_4x1 P8 CONN_4
+  ( 1 N-000002 )
+  ( 2 N-000007 )
+  ( 3 ? )
+  ( 4 N-000018 )
+ )
+)
+*

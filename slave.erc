@@ -1,0 +1,65 @@
+ERC report (Wed 22 May 2013 11:28:19 PM EEST)
+
+***** Sheet /
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.9000 ",0.7500 "): Pin 16 (power_in) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.2000 "): Pin 1 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.4000 "): Pin 2 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.5000 "): Pin 4 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.3000 "): Pin 5 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.9000 ",2.0500 "): Pin 8 (power_in) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (3.4500 ",3.2500 "): Pin 21 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.7500 "): Pin 24 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.8500 "): Pin 25 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.1500 "): Pin 16 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.9500 "): Pin 26 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.2500 "): Pin 17 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.3500 "): Pin 18 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",3.4500 "): Pin 19 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.1000 "): Pin 11 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",0.8000 "): Pin 12 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.6000 ",0.8000 "): Pin 13 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",0.9000 "): Pin 14 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (4.2000 ",1.0000 "): Pin 15 (passive) of component U1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.3000 ",1.2500 "): Pin 2 (passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.3000 ",1.4500 "): Pin 3 (passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.3000 ",1.6500 "): Pin 4 (passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.3000 ",1.1500 "): Pin 6 (passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (1.3000 ",1.7500 "): Pin 9 (passive) of component J1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",4.3500 "): Pin 2 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",4.4500 "): Pin 3 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",4.5500 "): Pin 4 (BiDi) of component IC1 is unconnected.
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (5.3500 ",4.6500 "): Pin 5 (BiDi) of component IC1 is unconnected.
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (8.9500 ",3.2500 "): Pin 1 (power_in) of component #PWR024 is not driven (Net 6).
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (5.8500 ",6.7000 "): Pin 1 (power_in) of component #PWR013 is not driven (Net 1).
+
+ >> Errors ERC: 0
