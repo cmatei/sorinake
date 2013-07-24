@@ -26,6 +26,9 @@
 
 #define RELAY_MASK (RELAY_1 | RELAY_2 | RELAY_3 | RELAY_4)
 
+/* power LED */
+#define PWR_LED _BV(PD5)
+
 /* DS1820 pins */
 #define DS1820_1 _BV(PB2)
 #define DS1820_2 _BV(PB3)
@@ -353,20 +356,27 @@ ISR(TIMER0_OVF_vect)
 		count = 0;
 		regs.timestamp++;
 
+		/* turn on power led */
+		PORTD &= ~PWR_LED;
+
 		/* wraps in ~136 years :P */
 		if (regs.timestamp - regs.twi_timestamp > SAFEMODE_SECONDS)
 			relays_set(0);
 	}
 
 	sei();
+
+	/* turn off power led */
+	if (count > 5)
+		PORTD |= PWR_LED;
 }
 
 
 static void init_hardware()
 {
 	/* port D: relays */
-	DDRD = RELAY_MASK;
-	PORTD &= ~RELAY_MASK;		     // disable relays
+	DDRD = RELAY_MASK | PWR_LED;
+	PORTD &= ~(RELAY_MASK | PWR_LED);    // disable relays
 
 	/* port B: AMUX + DS1820 */
 	DDRB = AMUX_MASK;
