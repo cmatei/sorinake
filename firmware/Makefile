@@ -1,20 +1,20 @@
-CC	= avr-gcc -mmcu=atmega8 -fomit-frame-pointer
-OBJCOPY	= avr-objcopy
-CFLAGS	= -Wall -Os -g -Wall -I.
+AVRCC	        = avr-gcc -mmcu=atmega8 -fomit-frame-pointer
+AVROBJCOPY	= avr-objcopy
+AVRCFLAGS	= -Wall -Os -g -Wall -I.
 
 all: main.hex
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $^
+	$(AVRCC) $(AVRCFLAGS) -c -o $@ $^
 
 %.hex: %.elf
-	$(OBJCOPY) -j .text -j .data -O ihex $^ $@
+	$(AVROBJCOPY) -j .text -j .data -O ihex $^ $@
 
 %.bin: %.elf
-	$(OBJCOPY) -j .text -j .data -O binary $^ $@
+	$(AVROBJCOPY) -j .text -j .data -O binary $^ $@
 
 main.elf: main.o crc8.o
-	$(CC) -o $@ $^
+	$(AVRCC) -o $@ $^
 
 install: main.hex
 	sudo avrdude -pm8 -cusbtiny -U flash:w:main.hex:i
