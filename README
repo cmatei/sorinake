@@ -1,0 +1,61 @@
+
+Solar panel temperature controller
+----------------------------------
+
+4 x DS1820 type sensors
+4 x PT1000 type sensors
+4 x RELAYS
+
+
+**** PCB IS NOT UP TO DATE ! Relay footprint is wrong (argh). ****
+
+Communication to a controlling device (e.g. raspberry pi) is done via
+I2C, default address 0x32.
+
+Reading 144 bytes from the device will return a buffer with the
+following structure (LSB):
+
+
+struct ds1820 {
+	uint8_t pin;
+	uint8_t state;
+	uint8_t data[9];
+	uint8_t pad;
+	uint32_t read_count;
+} __attribute__ ((packed));
+
+struct pt1000 {
+	uint8_t amux;
+	uint8_t converting;
+	uint16_t raw[5];
+	uint32_t count;
+} __attribute__ ((packed));
+
+struct i2c_registers {
+	struct ds1820 ds1820[4];
+	struct pt1000 pt1000[4];
+	uint8_t  relays;
+	uint8_t  pad[5];
+	uint32_t twi_timestamp;
+	uint32_t timestamp;
+	uint16_t marker;
+} __attribute__ ((packed));
+
+
+ds1820.data contains the DS18S20 scratchpad. ds1820.read_count can be
+used to check if the sensor is responding properly.
+
+pt1000.raw[5] are the last 5 ADC values, suggest you average them.
+
+i2c_registers.relays bits 0..3 are the relays 1..4
+
+i2c_registers.timestamp are roughly seconds since reset.
+
+i2c_registers.marker is 0xAA55, a very coarse check for bit errors on
+I2C.
+
+To set the relays, write 2 bytes on I2C: first byte is the command
+(must be == 1) and second byte is the relays value (bits 0..3).
+
+If no I2C communication is done for more than ~1 minute, the relays
+are reset (safe-mode).
